@@ -1,0 +1,45 @@
+*{
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: 'Gailroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#container{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#container i{
+    color: rgb(230, 85, 85);
+    font-size: 75px;
+    position: absolute;
+    top: 45%;
+    left:40%;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.4s;
+}
